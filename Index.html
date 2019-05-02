@@ -7,8 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS propio -->
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-    <title>Formulario</title>
+    <title>Halo Multiplayer</title>
   </head>
   <body>
     <head>
@@ -27,25 +29,30 @@
                   <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-link active">
-                  <a class="nav-link" href="#">Serverlist</a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servlerlist
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">hub.mcs.gg</a>
+                    <a class="dropdown-item" href="#">SkittleMC.com</a>
+                    <a class="dropdown-item" href="#">PLAY.ROYALLEGACY.NET</a>
+                    <a class="dropdown-item" href="#">eu.sonoyuncu.network:25565</a>
+                    <a class="dropdown-item" href="#">play.pika-network.net</a>
+                    <a class="dropdown-item" href="#">skykingdoms.net</a>
+                  </div>
                 </li>
               </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="Images\halo.icon" width="20" height="20" alt="">
+                </span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-secondary">Login</button>                  
+              </form>
             </div>
-
-            <form class="form-inline my-2 my-lg-0 ">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">
-                          <img src="Images\halo.icon" width="18" height="18" alt="">
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    <button type="button" class="btn btn-secondary">Login</button>
-                </div>                    
-            </form>
-
           </nav>
     </head>
+    <div class="view">
     <article>
       <form>
           <div class="container">
@@ -53,8 +60,9 @@
                 <div class="col-12">
                     FORMULARIO DE REGISTRIO
                 </div>
+              </div>
                 <div class="row">
-                  <div class="col-md-4 col-sm-12">
+                  <div class="col-md-8 col-sm-12">
                       <div class="form-group">
                           <label for="exampleInputEmail1">Email address</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -63,28 +71,22 @@
                   </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-8 col-sm-12">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                           </div>
                     </div>
                 </div>
-            </div>
-          </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+          </div>          
         </form>
-      
-
-        
-            
-            
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
     </article>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
